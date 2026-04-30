@@ -1,0 +1,11 @@
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usart.h:1803:26:LL_USART_IsActiveFlag_TC	16	static
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usart.h:1814:26:LL_USART_IsActiveFlag_TXE	16	static
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usart.h:2426:22:LL_USART_TransmitData8	16	static
+../Core/Src/sps_protocol.c:8:17:SPS_Crc16UpdateByte	24	static
+../Core/Src/sps_protocol.c:27:17:SPS_Crc16Frame	24	static
+../Core/Src/sps_protocol.c:42:6:SPS_Protocol_ParserInit	16	static
+../Core/Src/sps_protocol.c:52:9:SPS_Protocol_ParserPushByte	32	static
+../Core/Src/sps_protocol.c:157:13:SPS_Protocol_SendByte	16	static
+../Core/Src/sps_protocol.c:166:6:SPS_Protocol_SendFrame	24	static
+../Core/Src/sps_protocol.c:188:6:SPS_Protocol_SendAck	24	static
+../Core/Src/sps_protocol.c:197:6:SPS_Protocol_SendNack	24	static

@@ -1,0 +1,4 @@
+../Core/Src/command_dispatcher.c:7:13:Command_DispatchLight	32	static
+../Core/Src/command_dispatcher.c:56:13:Command_DispatchRelayMotor	32	static
+../Core/Src/command_dispatcher.c:118:13:Command_DispatchRelayStatus	24	static
+../Core/Src/command_dispatcher.c:162:6:Command_DispatchFrame	16	static

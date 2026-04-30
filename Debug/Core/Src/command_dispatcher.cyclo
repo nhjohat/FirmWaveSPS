@@ -1,0 +1,4 @@
+../Core/Src/command_dispatcher.c:7:13:Command_DispatchLight	8
+../Core/Src/command_dispatcher.c:56:13:Command_DispatchRelayMotor	8
+../Core/Src/command_dispatcher.c:118:13:Command_DispatchRelayStatus	6
+../Core/Src/command_dispatcher.c:162:6:Command_DispatchFrame	8

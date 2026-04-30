@@ -1,0 +1,7 @@
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usart.h:1792:26:LL_USART_IsActiveFlag_RXNE	16	static
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usart.h:2403:25:LL_USART_ReceiveData8	16	static
+../Core/Src/freertos.c:90:6:MX_FREERTOS_Init	8	static
+../Core/Src/freertos.c:149:6:StartUartRxTask	552	static
+../Core/Src/freertos.c:192:6:StartCommandTask	16	static
+../Core/Src/freertos.c:213:6:StartRelayTask	24	static
+../Core/Src/freertos.c:240:6:StartStatusTask	16	static
