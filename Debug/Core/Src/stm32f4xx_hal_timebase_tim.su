@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 ../Core/Src/stm32f4xx_hal_timebase_tim.c:41:19:HAL_InitTick	64	static
 ../Core/Src/stm32f4xx_hal_timebase_tim.c:121:6:HAL_SuspendTick	4	static
 ../Core/Src/stm32f4xx_hal_timebase_tim.c:133:6:HAL_ResumeTick	4	static
+=======
+../Core/Src/stm32f4xx_hal_timebase_tim.c:41:19:HAL_InitTick	56	static
+../Core/Src/stm32f4xx_hal_timebase_tim.c:111:6:HAL_SuspendTick	4	static
+../Core/Src/stm32f4xx_hal_timebase_tim.c:123:6:HAL_ResumeTick	4	static
+>>>>>>> 01ccb4f4c884c2ffb501141d05a78716c179a428

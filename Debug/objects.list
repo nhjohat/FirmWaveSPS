@@ -1,4 +1,5 @@
 "./Core/Src/command_dispatcher.o"
+<<<<<<< HEAD
 "./Core/Src/dma.o"
 "./Core/Src/freertos.o"
 "./Core/Src/gpio.o"
@@ -6,6 +7,11 @@
 "./Core/Src/main.o"
 "./Core/Src/ota_service.o"
 "./Core/Src/projector_service.o"
+=======
+"./Core/Src/freertos.o"
+"./Core/Src/gpio.o"
+"./Core/Src/main.o"
+>>>>>>> 01ccb4f4c884c2ffb501141d05a78716c179a428
 "./Core/Src/relay_service.o"
 "./Core/Src/sps_protocol.o"
 "./Core/Src/stm32f4xx_hal_msp.o"
@@ -14,7 +20,10 @@
 "./Core/Src/syscalls.o"
 "./Core/Src/sysmem.o"
 "./Core/Src/system_stm32f4xx.o"
+<<<<<<< HEAD
 "./Core/Src/tim.o"
+=======
+>>>>>>> 01ccb4f4c884c2ffb501141d05a78716c179a428
 "./Core/Src/usart.o"
 "./Core/Startup/startup_stm32f401ccux.o"
 "./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o"
@@ -32,7 +41,16 @@
 "./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o"
 "./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o"
 "./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o"
+<<<<<<< HEAD
 "./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o"
+=======
+"./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.o"
+"./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.o"
+"./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.o"
+"./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.o"
+"./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.o"
+"./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.o"
+>>>>>>> 01ccb4f4c884c2ffb501141d05a78716c179a428
 "./Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.o"
 "./Middlewares/Third_Party/FreeRTOS/Source/croutine.o"
 "./Middlewares/Third_Party/FreeRTOS/Source/event_groups.o"

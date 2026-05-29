@@ -1,2 +1,9 @@
+<<<<<<< HEAD
 ../Core/Src/command_dispatcher.c:15:17:RelayCmd_Pack	16	static
 ../Core/Src/command_dispatcher.c:26:18:Command_DispatchFrame	112	static
+=======
+../Core/Src/command_dispatcher.c:7:13:Command_DispatchLight	32	static
+../Core/Src/command_dispatcher.c:56:13:Command_DispatchRelayMotor	32	static
+../Core/Src/command_dispatcher.c:118:13:Command_DispatchRelayStatus	24	static
+../Core/Src/command_dispatcher.c:162:6:Command_DispatchFrame	16	static
+>>>>>>> 01ccb4f4c884c2ffb501141d05a78716c179a428

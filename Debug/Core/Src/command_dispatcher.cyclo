@@ -1,2 +1,9 @@
+<<<<<<< HEAD
 ../Core/Src/command_dispatcher.c:15:17:RelayCmd_Pack	1
 ../Core/Src/command_dispatcher.c:26:18:Command_DispatchFrame	26
+=======
+../Core/Src/command_dispatcher.c:7:13:Command_DispatchLight	8
+../Core/Src/command_dispatcher.c:56:13:Command_DispatchRelayMotor	8
+../Core/Src/command_dispatcher.c:118:13:Command_DispatchRelayStatus	6
+../Core/Src/command_dispatcher.c:162:6:Command_DispatchFrame	8
+>>>>>>> 01ccb4f4c884c2ffb501141d05a78716c179a428

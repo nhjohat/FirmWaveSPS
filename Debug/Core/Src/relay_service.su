@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ../Core/Src/relay_service.c:46:13:Relay_Write	16	static
 ../Core/Src/relay_service.c:53:13:Motor_StopCurtain	8	static
 ../Core/Src/relay_service.c:61:13:Motor_StopScreen	8	static
@@ -9,3 +10,25 @@
 ../Core/Src/relay_service.c:245:9:Relay_Service_GetLightState	4	static
 ../Core/Src/relay_service.c:250:9:Relay_Service_GetCurtainState	4	static
 ../Core/Src/relay_service.c:255:9:Relay_Service_GetScreenState	4	static
+=======
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_gpio.h:881:22:LL_GPIO_SetOutputPin	16	static
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_gpio.h:910:22:LL_GPIO_ResetOutputPin	16	static
+../Core/Src/relay_service.c:38:17:Relay_MsToTicks	24	static
+../Core/Src/relay_service.c:50:13:Relay_DelayMs	16	static
+../Core/Src/relay_service.c:55:16:Relay_TimeExpired	16	static
+../Core/Src/relay_service.c:60:13:Relay_Write	24	static
+../Core/Src/relay_service.c:83:6:Relay_Service_AllOff	8	static
+../Core/Src/relay_service.c:101:6:Relay_Service_Init	8	static
+../Core/Src/relay_service.c:106:23:Relay_SetLight	16	static
+../Core/Src/relay_service.c:125:23:Relay_CurtainOpen	16	static
+../Core/Src/relay_service.c:139:23:Relay_CurtainClose	16	static
+../Core/Src/relay_service.c:153:23:Relay_CurtainStop	8	static
+../Core/Src/relay_service.c:164:23:Relay_SetCurtain	16	static
+../Core/Src/relay_service.c:184:23:Relay_ScreenUp	16	static
+../Core/Src/relay_service.c:198:23:Relay_ScreenDown	16	static
+../Core/Src/relay_service.c:212:23:Relay_ScreenStop	8	static
+../Core/Src/relay_service.c:223:23:Relay_SetScreen	16	static
+../Core/Src/relay_service.c:243:16:Relay_Service_ExecuteCommand	24	static
+../Core/Src/relay_service.c:264:6:Relay_Service_Periodic	16	static
+../Core/Src/relay_service.c:285:9:Relay_Service_GetStatus	16	static
+>>>>>>> 01ccb4f4c884c2ffb501141d05a78716c179a428

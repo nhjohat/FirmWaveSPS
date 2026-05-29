@@ -42,6 +42,7 @@
 void MX_GPIO_Init(void)
 {
 
+<<<<<<< HEAD
   GPIO_InitTypeDef GPIO_InitStruct = {0};
 
   /* GPIO Ports Clock Enable */
@@ -67,6 +68,35 @@ void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(LIGHT_RELAY_GPIO_Port, &GPIO_InitStruct);
+=======
+  LL_GPIO_InitTypeDef GPIO_InitStruct = {0};
+
+  /* GPIO Ports Clock Enable */
+  LL_AHB1_GRP1_EnableClock(LL_AHB1_GRP1_PERIPH_GPIOA);
+  LL_AHB1_GRP1_EnableClock(LL_AHB1_GRP1_PERIPH_GPIOB);
+
+  /**/
+  LL_GPIO_ResetOutputPin(GPIOB, RELAY_1_LIGHT_Pin|RELAY_2_CURTAIN_OPEN_Pin|RELAY_3_CURTAIN_CLOSE_Pin|RELAY_4_SCREEN_UP_Pin);
+
+  /**/
+  LL_GPIO_ResetOutputPin(RELAY_1_LIGHTA15_GPIO_Port, RELAY_1_LIGHTA15_Pin);
+
+  /**/
+  GPIO_InitStruct.Pin = RELAY_1_LIGHT_Pin|RELAY_2_CURTAIN_OPEN_Pin|RELAY_3_CURTAIN_CLOSE_Pin|RELAY_4_SCREEN_UP_Pin;
+  GPIO_InitStruct.Mode = LL_GPIO_MODE_OUTPUT;
+  GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
+  GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
+  GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
+  LL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+
+  /**/
+  GPIO_InitStruct.Pin = RELAY_1_LIGHTA15_Pin;
+  GPIO_InitStruct.Mode = LL_GPIO_MODE_OUTPUT;
+  GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
+  GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
+  GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
+  LL_GPIO_Init(RELAY_1_LIGHTA15_GPIO_Port, &GPIO_InitStruct);
+>>>>>>> 01ccb4f4c884c2ffb501141d05a78716c179a428
 
 }
 

@@ -2,6 +2,7 @@
 #define COMMAND_DISPATCHER_H
 
 #include "sps_protocol.h"
+<<<<<<< HEAD
 #include "cmsis_os.h"
 
 typedef enum
@@ -18,3 +19,9 @@ typedef enum
 DispatchResult_t Command_DispatchFrame(const SPS_Frame_t *frame);
 
 #endif /* COMMAND_DISPATCHER_H */
+=======
+
+void Command_DispatchFrame(const sps_frame_t *frame);
+
+#endif
+>>>>>>> 01ccb4f4c884c2ffb501141d05a78716c179a428

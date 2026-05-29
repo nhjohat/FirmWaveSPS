@@ -1,1 +1,6 @@
+<<<<<<< HEAD
+=======
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_bus.h:409:22:LL_AHB1_GRP1_EnableClock	1
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_gpio.h:910:22:LL_GPIO_ResetOutputPin	1
+>>>>>>> 01ccb4f4c884c2ffb501141d05a78716c179a428
 ../Core/Src/gpio.c:42:6:MX_GPIO_Init	1

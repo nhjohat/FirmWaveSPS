@@ -19,8 +19,11 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "cmsis_os.h"
+<<<<<<< HEAD
 #include "dma.h"
 #include "tim.h"
+=======
+>>>>>>> 01ccb4f4c884c2ffb501141d05a78716c179a428
 #include "usart.h"
 #include "gpio.h"
 
@@ -91,8 +94,11 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+<<<<<<< HEAD
   MX_DMA_Init();
   MX_TIM1_Init();
+=======
+>>>>>>> 01ccb4f4c884c2ffb501141d05a78716c179a428
   MX_USART1_UART_Init();
   MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
@@ -125,6 +131,7 @@ int main(void)
   */
 void SystemClock_Config(void)
 {
+<<<<<<< HEAD
   RCC_OscInitTypeDef RCC_OscInitStruct = {0};
   RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
 
@@ -163,6 +170,39 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
+=======
+  LL_FLASH_SetLatency(LL_FLASH_LATENCY_0);
+  while(LL_FLASH_GetLatency()!= LL_FLASH_LATENCY_0)
+  {
+  }
+  LL_PWR_SetRegulVoltageScaling(LL_PWR_REGU_VOLTAGE_SCALE2);
+  LL_RCC_HSI_SetCalibTrimming(16);
+  LL_RCC_HSI_Enable();
+
+   /* Wait till HSI is ready */
+  while(LL_RCC_HSI_IsReady() != 1)
+  {
+
+  }
+  LL_RCC_SetAHBPrescaler(LL_RCC_SYSCLK_DIV_1);
+  LL_RCC_SetAPB1Prescaler(LL_RCC_APB1_DIV_1);
+  LL_RCC_SetAPB2Prescaler(LL_RCC_APB2_DIV_1);
+  LL_RCC_SetSysClkSource(LL_RCC_SYS_CLKSOURCE_HSI);
+
+   /* Wait till System clock is ready */
+  while(LL_RCC_GetSysClkSource() != LL_RCC_SYS_CLKSOURCE_STATUS_HSI)
+  {
+
+  }
+  LL_SetSystemCoreClock(16000000);
+
+   /* Update the time base */
+  if (HAL_InitTick (TICK_INT_PRIORITY) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  LL_RCC_SetTIMPrescaler(LL_RCC_TIM_PRESCALER_TWICE);
+>>>>>>> 01ccb4f4c884c2ffb501141d05a78716c179a428
 }
 
 /* USER CODE BEGIN 4 */
@@ -171,7 +211,11 @@ void SystemClock_Config(void)
 
 /**
   * @brief  Period elapsed callback in non blocking mode
+<<<<<<< HEAD
   * @note   This function is called  when TIM5 interrupt took place, inside
+=======
+  * @note   This function is called  when TIM11 interrupt took place, inside
+>>>>>>> 01ccb4f4c884c2ffb501141d05a78716c179a428
   * HAL_TIM_IRQHandler(). It makes a direct call to HAL_IncTick() to increment
   * a global variable "uwTick" used as application time base.
   * @param  htim : TIM handle
@@ -182,7 +226,11 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
   /* USER CODE BEGIN Callback 0 */
 
   /* USER CODE END Callback 0 */
+<<<<<<< HEAD
   if (htim->Instance == TIM5)
+=======
+  if (htim->Instance == TIM11)
+>>>>>>> 01ccb4f4c884c2ffb501141d05a78716c179a428
   {
     HAL_IncTick();
   }

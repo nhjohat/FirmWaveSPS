@@ -1,5 +1,19 @@
+<<<<<<< HEAD
 ../Core/Src/sps_protocol.c:23:6:SPS_Protocol_Init	1
 ../Core/Src/sps_protocol.c:31:10:SPS_Protocol_Crc16Ccitt	6
 ../Core/Src/sps_protocol.c:60:17:SPS_Protocol_CalcFrameCrc	3
 ../Core/Src/sps_protocol.c:80:19:SPS_Protocol_ParseByte	15
 ../Core/Src/sps_protocol.c:185:10:SPS_Protocol_BuildFrame	7
+=======
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usart.h:1803:26:LL_USART_IsActiveFlag_TC	1
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usart.h:1814:26:LL_USART_IsActiveFlag_TXE	1
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usart.h:2426:22:LL_USART_TransmitData8	1
+../Core/Src/sps_protocol.c:8:17:SPS_Crc16UpdateByte	3
+../Core/Src/sps_protocol.c:27:17:SPS_Crc16Frame	2
+../Core/Src/sps_protocol.c:42:6:SPS_Protocol_ParserInit	1
+../Core/Src/sps_protocol.c:52:9:SPS_Protocol_ParserPushByte	14
+../Core/Src/sps_protocol.c:157:13:SPS_Protocol_SendByte	2
+../Core/Src/sps_protocol.c:166:6:SPS_Protocol_SendFrame	3
+../Core/Src/sps_protocol.c:188:6:SPS_Protocol_SendAck	1
+../Core/Src/sps_protocol.c:197:6:SPS_Protocol_SendNack	1
+>>>>>>> 01ccb4f4c884c2ffb501141d05a78716c179a428

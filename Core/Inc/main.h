@@ -29,6 +29,20 @@ extern "C" {
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f4xx_hal.h"
 
+<<<<<<< HEAD
+=======
+#include "stm32f4xx_ll_rcc.h"
+#include "stm32f4xx_ll_bus.h"
+#include "stm32f4xx_ll_system.h"
+#include "stm32f4xx_ll_exti.h"
+#include "stm32f4xx_ll_cortex.h"
+#include "stm32f4xx_ll_utils.h"
+#include "stm32f4xx_ll_pwr.h"
+#include "stm32f4xx_ll_dma.h"
+#include "stm32f4xx_ll_usart.h"
+#include "stm32f4xx_ll_gpio.h"
+
+>>>>>>> 01ccb4f4c884c2ffb501141d05a78716c179a428
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
@@ -57,6 +71,7 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+<<<<<<< HEAD
 #define SCREEN_UP_RELAY_Pin GPIO_PIN_12
 #define SCREEN_UP_RELAY_GPIO_Port GPIOB
 #define SCREEN_DOWN_RELAY_Pin GPIO_PIN_13
@@ -67,6 +82,18 @@ void Error_Handler(void);
 #define CURTAIN_CLOSE_RELAY_GPIO_Port GPIOB
 #define LIGHT_RELAY_Pin GPIO_PIN_15
 #define LIGHT_RELAY_GPIO_Port GPIOA
+=======
+#define RELAY_1_LIGHT_Pin LL_GPIO_PIN_12
+#define RELAY_1_LIGHT_GPIO_Port GPIOB
+#define RELAY_2_CURTAIN_OPEN_Pin LL_GPIO_PIN_13
+#define RELAY_2_CURTAIN_OPEN_GPIO_Port GPIOB
+#define RELAY_3_CURTAIN_CLOSE_Pin LL_GPIO_PIN_14
+#define RELAY_3_CURTAIN_CLOSE_GPIO_Port GPIOB
+#define RELAY_4_SCREEN_UP_Pin LL_GPIO_PIN_15
+#define RELAY_4_SCREEN_UP_GPIO_Port GPIOB
+#define RELAY_1_LIGHTA15_Pin LL_GPIO_PIN_15
+#define RELAY_1_LIGHTA15_GPIO_Port GPIOA
+>>>>>>> 01ccb4f4c884c2ffb501141d05a78716c179a428
 
 /* USER CODE BEGIN Private defines */
 
