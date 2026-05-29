@@ -1,0 +1,12 @@
+../Core/Src/freertos.c:169:6:MX_FREERTOS_Init	56	static,ignoring_inline_asm
+../Core/Src/freertos.c:232:6:StartUartRxTask	16	static
+../Core/Src/freertos.c:256:6:StartCommandTask	280	static
+../Core/Src/freertos.c:350:6:StartRelayTask	24	static
+../Core/Src/freertos.c:389:6:StartProjectorTask	24	static
+../Core/Src/freertos.c:431:6:StartIrTask	24	static
+../Core/Src/freertos.c:469:6:StartOtaTask	96	static
+../Core/Src/freertos.c:507:6:HAL_UARTEx_RxEventCallback	24	static
+../Core/Src/freertos.c:532:13:App_SendFrame	296	static
+../Core/Src/freertos.c:559:13:App_SendAck	24	static
+../Core/Src/freertos.c:568:13:App_SendNack	24	static
+../Core/Src/freertos.c:578:13:App_HandleRelayStatus	24	static

@@ -1,0 +1,3 @@
+../Core/Src/projector_service.c:20:6:Projector_Service_Init	1
+../Core/Src/projector_service.c:28:19:Projector_Service_Control	4
+../Core/Src/projector_service.c:58:19:Projector_Service_ExecuteCommand	2

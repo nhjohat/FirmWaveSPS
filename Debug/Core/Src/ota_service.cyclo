@@ -1,0 +1,8 @@
+../Core/Src/ota_service.c:28:6:OTA_Service_Init	1
+../Core/Src/ota_service.c:36:13:OTA_Service_Start	2
+../Core/Src/ota_service.c:51:13:OTA_Service_WriteChunk	6
+../Core/Src/ota_service.c:91:13:OTA_Service_End	3
+../Core/Src/ota_service.c:113:9:OTA_Service_IsInProgress	1
+../Core/Src/ota_service.c:118:10:OTA_Service_GetExpectedSize	1
+../Core/Src/ota_service.c:123:10:OTA_Service_GetReceivedSize	1
+../Core/Src/ota_service.c:128:13:OTA_Service_ExecuteCommand	6

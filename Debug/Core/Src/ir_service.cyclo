@@ -1,0 +1,4 @@
+../Core/Src/ir_service.c:8:6:IR_Service_Init	1
+../Core/Src/ir_service.c:17:13:IR_SendDemoBurst	1
+../Core/Src/ir_service.c:29:12:IR_Service_ControlAC	4
+../Core/Src/ir_service.c:46:12:IR_Service_ExecuteCommand	2

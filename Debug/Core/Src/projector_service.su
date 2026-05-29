@@ -1,0 +1,3 @@
+../Core/Src/projector_service.c:20:6:Projector_Service_Init	4	static
+../Core/Src/projector_service.c:28:19:Projector_Service_Control	24	static
+../Core/Src/projector_service.c:58:19:Projector_Service_ExecuteCommand	16	static

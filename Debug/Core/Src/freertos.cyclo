@@ -1,0 +1,12 @@
+../Core/Src/freertos.c:169:6:MX_FREERTOS_Init	13
+../Core/Src/freertos.c:232:6:StartUartRxTask	1
+../Core/Src/freertos.c:256:6:StartCommandTask	12
+../Core/Src/freertos.c:350:6:StartRelayTask	3
+../Core/Src/freertos.c:389:6:StartProjectorTask	4
+../Core/Src/freertos.c:431:6:StartIrTask	3
+../Core/Src/freertos.c:469:6:StartOtaTask	4
+../Core/Src/freertos.c:507:6:HAL_UARTEx_RxEventCallback	4
+../Core/Src/freertos.c:532:13:App_SendFrame	3
+../Core/Src/freertos.c:559:13:App_SendAck	1
+../Core/Src/freertos.c:568:13:App_SendNack	1
+../Core/Src/freertos.c:578:13:App_HandleRelayStatus	7
