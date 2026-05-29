@@ -1,0 +1,52 @@
+Repository:
+https://github.com/nhjohat/FirmWaveSPS
+
+Repository purpose:
+Main GitHub repository to continue the SPS MCU firmware work.
+
+Expected firmware folder:
+firmware/
+
+Recommended branch:
+feature
+
+Current branch / latest commit:
+Cần xác nhận lại sau khi clone/push repo mới.
+
+Historical checkpoint from previous repo:
+0aefde8 - Implement task-based projector IR and OTA handling
+
+Important note:
+Commit 0aefde8 was created during the previous workflow. If the new repository FirmWaveSPS has not yet received this commit, do not assume the hash is present there. After pushing the firmware to the new repository, verify the actual latest commit with:
+
+git remote -v
+git branch --show-current
+git log --oneline -1
+git status
+
+Current firmware status to preserve:
+- STM32F401CCU6 Blackpill.
+- STM32 HAL + FreeRTOS CMSIS_V2.
+- Clean build pass: 0 errors, 0 warnings.
+- Task-based architecture completed for projectorTask, irTask, otaTask.
+- UART1 protocol path: UART DMA ReceiveToIdle -> uartQueue -> commandTask -> parser -> dispatcher -> service queue -> task -> ACK/NACK.
+- Relay control task completed at build level.
+- Projector control is task-based but RS232 command payload is still skeleton.
+- IR control is task-based but currently only demo PWM carrier burst.
+- OTA is task-based skeleton only, not a real bootloader OTA yet.
+- Hardware UART/relay test is the next practical priority.
+
+Next recommended hardware test:
+Laptop -> FT232RL USB to UART TTL -> STM32 USART1.
+
+UART1 pins:
+STM32 PA9  = USART1_TX
+STM32 PA10 = USART1_RX
+Baudrate   = 115200 8N1
+
+Wiring:
+FT232RL TXD -> STM32 PA10 / USART1_RX
+FT232RL RXD -> STM32 PA9  / USART1_TX
+FT232RL GND -> STM32 GND
+
+Do not connect 5V UART signal to STM32 pins. Use 3.3V TTL.
